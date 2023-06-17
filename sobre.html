@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINTECH - RA97603</title>
+    <!-- region: importação bootstrap, popper e jquery -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- region: importação bootstrap, popper e jquery -->
+</head>
+<body class="body-primary">
+
+  <nav class="navbar fixed-top navbar-light bg-primary">
+    <div class="container-fluid">
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#menu">
+        <i class="fas fa-bars color-primary"></i>
+      </button>
+
+    </div>
+  </nav>
+  
+  <div class="modal modal-personalizado true" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content modal-content-personalizado bg-primary">
+        <div class="modal-header modal-header-personalizado">
+          <div class="row">
+            <i class="fas fa-xmark color-primary" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <div class="row">
+            <img src="/resources/img/logo.png" class="img-fluid"/>
+          </div>
+        </div>
+        <div class="modal-body">
+  
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" onclick="javascript:window.location.href='/home.html'">Página Inicial</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/fonterecebimentos.html'">Fonte de Recebimentos</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/recebimentos.html'">Recebimentos</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/sobre.html'">Sobre o projeto</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/index.html'">Sair</li>
+          </ul>
+  
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row align-items-center vh-100">
+        <div class="col-md-6 mx-auto">
+
+          <div class="row justify-content pb-1">
+            <h1 class="h1-title-primary color-primary">Sobre o Projeto</h1>
+          </div>
+  
+          <div class="row pb-2 pl-personalizado-separador">
+            <br />
+            <p class="separar"></p>
+          </div>
+
+          <div class="row justify-content-center pb-5">
+            <div class="col-sm-6"><img src="/resources/img/fiap-logo.jpg" class="img-fluid rounded"/></div>
+            <div class="col-sm-6"><img src="/resources/img/logo.png" class="img-fluid rounded"/></div>
+          </div>
+
+          <div class="row justify-content-center text-center pb-5 text-white">
+            <span>2023 - Fase 4</span>
+            <span>Cap. 5 Organizando e posicionando seu HTML - Páginas do Fintech usando HTML, CSS</span>
+            <span>Cap 7 - Formulários - Subir seu site no GIT</span>
+            <span>Desenvolvido por <strong>Rubens F. Neto - RM97603</strong></span>
+            <span>Turma 1TDSOB</span>
+          </div>
+
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

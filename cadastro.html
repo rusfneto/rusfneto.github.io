@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINTECH - RA97603</title>
+    <!-- region: importação bootstrap, popper e jquery -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- region: importação bootstrap, popper e jquery -->
+</head>
+<body class="body-primary">
+
+  <div class="container">
+    <div class="row align-items-center vh-100">
+        <div class="col-md-4 mx-auto">
+            
+            <div class="row justify-content pb-1">
+              <a href="/index.html"><i class="fa fa-arrow-left text-white" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="row justify-content pb-1">
+              <h1 class="h1-title-secondary">Criar Nova Conta</h1>
+            </div>
+
+            <div class="row pb-5" style="padding-left: calc(1.5rem * 0.5) !important">
+                <br/>
+                <p class="separar"></p>
+            </div>
+
+            <div class="row justify-content-center">
+              <form>
+
+                <div class="row pb-4">
+                  <div class="input-group">
+                    <span class="icon-field-default-style text-center">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <input type="email" class="form-control field-default-style" id="nomeCompletoField" placeholder="Nome Completo">
+                  </div>
+                </div>
+
+                <div class="row pb-4">
+                  <div class="input-group">
+                    <span class="icon-field-default-style text-center">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </span>
+                    <input type="email" class="form-control field-default-style" id="telefoneField" placeholder="Telefone">
+                  </div>
+                </div>
+              
+                <div class="row pb-4">
+                    <div class="input-group">
+                      <span class="icon-field-default-style text-center">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </span>
+                      <input type="email" class="form-control field-default-style" id="emailField" placeholder="E-mail">
+                    </div>
+                </div>
+
+                <div class="row pb-4">
+                    <div class="input-group">
+                      <span class="icon-field-default-style text-center">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </span>
+                      <input type="password" class="form-control field-default-style" id="senhaField" placeholder="Senha">
+                    </div>
+                </div>
+
+                <div class="row pb-4">
+                  <div class="input-group">
+                    <span class="icon-field-default-style text-center">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                    </span>
+                    <input type="password" class="form-control field-default-style" id="repitaSenhaField" placeholder="Repita Sua Senha">
+                  </div>
+              </div>
+
+                <div class="row pb-5">
+                  <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="cadastrar()">Cadastrar</button>
+                </div>
+                
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  function entrar(){
+    window.location.href = "/entrar";
+  }
+</script>
+</body>
+</html>

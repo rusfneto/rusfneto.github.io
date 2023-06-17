@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FINTECH - RA97603</title>
+  <!-- region: importação bootstrap, popper e jquery -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- region: importação bootstrap, popper e jquery -->
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-light bg-primary">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#menu">
+        <i class="fas fa-bars color-primary"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <div class="modal modal-personalizado true" id="menu" tabindex="-1" aria-labelledby="menuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content content-personalizado bg-primary">
+        <div class="modal-header modal-header-personalizado">
+          <div class="row">
+            <i class="fas fa-xmark color-primary" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <div class="row">
+            <img src="/resources/img/logo.png" class="img-fluid" style="width: 80%" />
+          </div>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" onclick="javascript:window.location.href='/home.html'">Página Inicial</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/fonterecebimentos.html'">Fonte de
+              Recebimentos</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/recebimentos.html'">Recebimentos</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/sobre.html'">Sobre o projeto</li>
+            <li class="list-group-item" onclick="javascript:window.location.href='/index.html'">Sair</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center vh-100">
+      <div class="col-md-6 mx-auto">
+
+        <div class="row justify-content pb-1">
+          <h1 class="h1-title-primary color-primary">Fonte de Recebimentos</h1>
+        </div>
+
+        <div class="row pb-2 pl-personalizado-separador">
+          <br />
+          <p class="separar"></p>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento">Nova Fonte</button>
+
+        <div class="row justify-content-center pt-3 pb-3">
+          <table class="table table-hover">
+            <thead class="color-primary">
+              <th>Fonte</th>
+              <th></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Salário</td>
+                <td class="text-end"><i class="fas fa-arrow-right" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento"></td>
+              </tr>
+              <tr>
+                <td>Freelance</td>
+                <td class="text-end"><i class="fas fa-arrow-right" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento"></td>
+              </tr>
+              <tr>
+                <td>Poupança</td>
+                <td class="text-end"><i class="fas fa-arrow-right" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento"></td>
+              </tr>
+              <tr>
+                <td>Investimento</td>
+                <td class="text-end"><i class="fas fa-arrow-right" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento"></td>
+              </tr>
+              <tr>
+                <td>Adsense Google</td>
+                <td class="text-end"><i class="fas fa-arrow-right" data-bs-toggle="modal" data-bs-target="#novaFonteRecebimento"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="novaFonteRecebimento" tabindex="-1" aria-labelledby="novaFonteRecebimentoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title bold color-primary" id="novaFonteRecebimentoLabel">Nova Fonte de Recebimento</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row pb-4">
+            <div class="input-group">
+              <input type="text" class="form-control border-primary" id="novaFonteField" placeholder="Investimento">
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Gravar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
